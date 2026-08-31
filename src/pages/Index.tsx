@@ -65,8 +65,9 @@ const homeSchema = {
       "priceRange": "₹₹",
       "paymentAccepted": "Cash, Credit Card, Insurance, CGHS, ECHS, Ayushman Bharat",
       "sameAs": [
-        "https://www.facebook.com/jaipurhospital",
-        "https://www.instagram.com/jaipurhospital"
+        "https://www.facebook.com/share/1PtNFgMpZw/",
+        "https://www.instagram.com/jaipur_hospital_lalkothi",
+        "https://youtube.com/@jaipurhospitallalkothi1992?si=vA1EbYOY7jrGt835"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

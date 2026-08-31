@@ -1,10 +1,11 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const insurers = [
-  "Ayushman Bharat PM-JAY", "CGHS", "ECHS", "New India Assurance", "United India Insurance",
+  "Ayushman Bharat PM-JAY", "MAA Yojana", "RGHS", "CGHS", "ESIC", "ECHS", "New India Assurance", "United India Insurance",
   "Bajaj Allianz Health", "Niva Bupa", "SBI Health Insurance", "Star Health", "HDFC ERGO",
   "ICICI Lombard", "Aditya Birla Health", "Care Health", "TATA AIG", "Reliance General",
-  "Ayushman Bharat PM-JAY", "CGHS", "ECHS", "New India Assurance", "United India Insurance",
+  "Ayushman Bharat PM-JAY", "MAA Yojana", "RGHS", "CGHS", "ESIC", "ECHS", "New India Assurance", "United India Insurance",
 ];
 
 const EmpanelmentSection = () => {
@@ -24,18 +25,18 @@ const EmpanelmentSection = () => {
                 </h2>
                 <div className="space-y-4 mb-8 text-primary-foreground/90 text-sm md:text-base leading-relaxed">
                   <p>
-                    At Jaipur Hospital, we have worked to make quality healthcare financially accessible to as many people as possible. As a CGHS empanelled hospital in Jaipur, we serve government employees and central government pensioners with cashless treatment across all departments. Our ECHS empanelment extends the same benefit to defence personnel and their dependents.
+                    At Jaipur Hospital, we have worked to make quality healthcare financially accessible to everyone. We are empanelled with major government health schemes including Ayushman Bharat (PM-JAY), MAA Yojana, RGHS, CGHS, ESIC, and ECHS for complete cashless treatment.
                   </p>
                   <p>
-                    We are also registered under the Ayushman Bharat PM-JAY scheme, which allows eligible beneficiaries from across Rajasthan to receive cashless inpatient treatment at our hospital. Additionally, our 20+ TPA tie-ups cover most major private health insurance policies.
+                    Additionally, our 25+ corporate TPA and private health insurance partnerships cover all major policies with on-the-spot pre-authorization and hassle-free discharge.
                   </p>
                 </div>
-                <a
-                  href="#appointment"
+                <Link
+                  to="/our-schemes"
                   className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-bold rounded-full px-7 py-3.5 hover:scale-105 transition-transform shadow-lg"
                 >
-                  Check Your Eligibility Now <ArrowRight size={16} />
-                </a>
+                  Explore All Schemes & Eligibility <ArrowRight size={16} />
+                </Link>
               </div>
 
               {/* Right - Scrolling logos */}

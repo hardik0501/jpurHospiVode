@@ -12,7 +12,7 @@ const footerLinks: Record<string, { label: string; href: string }[]> = {
   ],
   "Patient Care": [
     { label: "Book Appointment", href: "/book-appointment" },
-    { label: "Empanelment", href: "/empanelments" },
+    { label: "Our Schemes", href: "/our-schemes" },
     { label: "Health Packages", href: "/health-packages" },
     { label: "Testimonials", href: "/testimonials" },
     { label: "Contact", href: "/contact" },
@@ -82,19 +82,19 @@ const ContactFooter = () => {
             {/* Social */}
             <div className="flex gap-3">
               {[
-                { Icon: Facebook, href: "https://www.facebook.com/jaipurhospital" },
-                { Icon: Instagram, href: "https://www.instagram.com/jaipurhospital" },
-                { Icon: Youtube, href: "#" },
-                { Icon: Twitter, href: "#" },
-              ].map(({ Icon, href }, idx) => (
+                { Icon: Facebook, href: "https://www.facebook.com/share/1PtNFgMpZw/", label: "Facebook" },
+                { Icon: Instagram, href: "https://www.instagram.com/jaipur_hospital_lalkothi", label: "Instagram" },
+                { Icon: Youtube, href: "https://youtube.com/@jaipurhospitallalkothi1992?si=vA1EbYOY7jrGt835", label: "YouTube" },
+              ].map(({ Icon, href, label }, idx) => (
                 <a
                   key={idx}
                   href={href}
-                  target={href !== "#" ? "_blank" : undefined}
-                  rel={href !== "#" ? "noopener noreferrer" : undefined}
-                  className="w-9 h-9 rounded-lg bg-navy-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-9 h-9 rounded-lg bg-navy-foreground/10 flex items-center justify-center hover:bg-primary transition-colors text-navy-foreground/70 hover:text-white"
                 >
-                  <Icon size={16} className="text-navy-foreground/70" />
+                  <Icon size={16} />
                 </a>
               ))}
             </div>

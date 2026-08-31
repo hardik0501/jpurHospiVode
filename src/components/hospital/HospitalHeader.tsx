@@ -9,7 +9,7 @@ const moreMenuItems = [
   { label: "Book Appointment", href: "/book-appointment" },
   { label: "Health Packages", href: "/health-packages" },
   { label: "Testimonials", href: "/testimonials" },
-  { label: "Empanelments", href: "/empanelments" },
+  { label: "Our Schemes", href: "/our-schemes" },
   { label: "Annual Report", href: "/annual-report" },
   { label: "Board of Directors", href: "/board-of-directors" },
   { label: "Company Profile", href: "/company-profile" },

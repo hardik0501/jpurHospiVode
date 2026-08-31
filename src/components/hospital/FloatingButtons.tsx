@@ -30,7 +30,7 @@ const FloatingButtons = () => {
         }`}>
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/jaipurhospital"
+            href="https://www.instagram.com/jaipur_hospital_lalkothi"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
@@ -46,7 +46,7 @@ const FloatingButtons = () => {
 
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/jaipurhospital"
+            href="https://www.facebook.com/share/1PtNFgMpZw/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 bg-[#1877F2] text-white rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
@@ -117,7 +117,7 @@ const FloatingButtons = () => {
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-t border-border p-3 flex sm:hidden items-center gap-2 shadow-[0_-8px_30px_rgb(0,0,0,0.12)]">
         {/* Facebook */}
         <a
-          href="https://www.facebook.com/jaipurhospital"
+          href="https://www.facebook.com/share/1PtNFgMpZw/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-11 h-11 flex items-center justify-center bg-[#1877F2] text-white rounded-xl active:scale-95 transition-transform shadow-md flex-shrink-0"
@@ -128,7 +128,7 @@ const FloatingButtons = () => {
 
         {/* Instagram */}
         <a
-          href="https://www.instagram.com/jaipurhospital"
+          href="https://www.instagram.com/jaipur_hospital_lalkothi"
           target="_blank"
           rel="noopener noreferrer"
           className="w-11 h-11 flex items-center justify-center bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white rounded-xl active:scale-95 transition-transform shadow-md flex-shrink-0"
