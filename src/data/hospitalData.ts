@@ -255,7 +255,7 @@ export const doctors: Doctor[] = [
   },
   {
     id: "dr-dinesh-kumar-dalmia",
-    img: getDoctorImg("dd-600x700.jpg"),
+    img: getDoctorImg("k-600x700.jpg"),
     name: "Dr. Dinesh Kumar Dalmia",
     qual: "MBBS, MD (Paediatric)",
     dept: "Pediatrics",
@@ -268,7 +268,7 @@ export const doctors: Doctor[] = [
   },
   {
     id: "dr-kamal-kant-khandelwal",
-    img: getDoctorImg("k-600x700.jpg"),
+    img: getDoctorImg("dd-600x700.jpg"),
     name: "Dr. Kamal Kant Khandelwal",
     qual: "MBBS, MD (Paediatric)",
     dept: "Pediatrics",
