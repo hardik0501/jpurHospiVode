@@ -5,9 +5,9 @@ import logoJH from "@/assets/logo-jh.png";
 
 // Mega menu items from reference list; skip what's already in main nav (About, Services, Doctors, Facilities, Contact)
 const moreMenuItems = [
+  { label: "Health Packages", href: "/health-packages", badge: "Offers" },
   { label: "Home", href: "/" },
   { label: "Book Appointment", href: "/book-appointment" },
-  { label: "Health Packages", href: "/health-packages" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Our Schemes", href: "/our-schemes" },
   { label: "Annual Report", href: "/annual-report" },
@@ -135,19 +135,28 @@ const HospitalHeader = () => {
                         <Link
                           key={item.label}
                           to={item.href}
-                          className="px-4 py-2.5 text-sm text-foreground hover:bg-primary-light hover:text-primary rounded-lg text-left transition-colors"
+                          className={`px-4 py-2.5 text-sm rounded-lg text-left transition-colors flex items-center justify-between gap-2 ${
+                            item.badge
+                              ? "bg-primary-light/60 text-primary font-bold hover:bg-primary hover:text-white"
+                              : "text-foreground hover:bg-primary-light hover:text-primary"
+                          }`}
                           onClick={() => setMoreOpen(false)}
                         >
-                          {item.label}
+                          <span>{item.label}</span>
+                          {item.badge && (
+                            <span className="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-amber-500 text-white shadow-sm">
+                              {item.badge}
+                            </span>
+                          )}
                         </Link>
                       ) : (
                         <a
                           key={item.label}
                           href={item.href}
-                          className="px-4 py-2.5 text-sm text-foreground hover:bg-primary-light hover:text-primary rounded-lg text-left transition-colors"
+                          className="px-4 py-2.5 text-sm text-foreground hover:bg-primary-light hover:text-primary rounded-lg text-left transition-colors flex items-center justify-between gap-2"
                           onClick={() => setMoreOpen(false)}
                         >
-                          {item.label}
+                          <span>{item.label}</span>
                         </a>
                       )
                     )}
@@ -217,19 +226,24 @@ const HospitalHeader = () => {
                   <Link
                     key={item.label}
                     to={item.href}
-                    className="text-sm text-foreground/90 py-1.5 hover:text-primary"
+                    className="text-sm text-foreground/90 py-1.5 hover:text-primary flex items-center justify-between pr-2"
                     onClick={() => setMobileOpen(false)}
                   >
-                    {item.label}
+                    <span>{item.label}</span>
+                    {item.badge && (
+                      <span className="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-amber-500 text-white">
+                        {item.badge}
+                      </span>
+                    )}
                   </Link>
                 ) : (
                   <a
                     key={item.label}
                     href={item.href}
-                    className="text-sm text-foreground/90 py-1.5 hover:text-primary"
+                    className="text-sm text-foreground/90 py-1.5 hover:text-primary flex items-center justify-between pr-2"
                     onClick={() => setMobileOpen(false)}
                   >
-                    {item.label}
+                    <span>{item.label}</span>
                   </a>
                 )
               )}
