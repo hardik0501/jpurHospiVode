@@ -4,6 +4,7 @@ import FloatingButtons from "@/components/hospital/FloatingButtons";
 import { FileText, Download, ChevronRight } from "lucide-react";
 
 const agmNotices = [
+  { title: "NOTICE OF 37TH AGM", file: "/Notice_of_AGM/NOTICE OF 37TH AGM.pdf" },
   { title: "NOTICE OF 36TH AGM", file: "/Notice_of_AGM/Notice-of-36th-AGM.pdf" },
   { title: "NOTICE OF 35TH AGM", file: "/Notice_of_AGM/Notice-of-35th-AGM.pdf" },
   { title: "NOTICE OF 34TH AGM", file: "/Notice_of_AGM/Notice-2023.pdf" },

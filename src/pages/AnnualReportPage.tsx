@@ -14,6 +14,7 @@ const ANNUAL_REPORTS = [
   { year: "2022–2023", pdf: "/AnualReport/AR-2023-IN-LAKHS_compressed.pdf" },
   { year: "2023–2024", pdf: "/AnualReport/Annual-Report-2023-2024.pdf" },
   { year: "2024–2025", pdf: "/AnualReport/Annual-Report-2024-2025.pdf" },
+  { year: "2025–2026", pdf: "/AnualReport/Financial Year 2025–2026.pdf" },
 ];
 
 const AnnualReportPage = () => {
@@ -62,7 +63,7 @@ const AnnualReportPage = () => {
                 Total Reports: {ANNUAL_REPORTS.length}
               </span>
               <span className="inline-flex items-center gap-1.5 bg-primary-light text-primary font-medium px-4 py-2 rounded-full">
-                Years Covered: 2015 – 2025
+                Years Covered: 2015 – 2026
               </span>
             </div>
           </div>

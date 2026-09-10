@@ -10,3 +10,4 @@ Place the following PDF files in this folder (same names as on the Annual Report
 8. AR-2023-IN-LAKHS_compressed.pdf
 9. Annual-Report-2023-2024.pdf
 10. Annual-Report-2024-2025.pdf
+11. Financial Year 2025–2026.pdf
