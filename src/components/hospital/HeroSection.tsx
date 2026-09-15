@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-2 bg-primary-foreground/15 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-4 sm:mb-6 animate-fade-up max-w-[95vw] sm:max-w-none">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0" />
           <span className="text-primary-foreground text-[10px] xs:text-xs sm:text-sm font-medium whitespace-normal sm:whitespace-nowrap text-center">
-            Trusted Healthcare Since 2004 · Lal Kothi, Jaipur, Rajasthan
+            Trusted Healthcare Since 1998 · Lal Kothi, Jaipur, Rajasthan
           </span>
         </div>
 

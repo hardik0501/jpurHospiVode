@@ -14,12 +14,12 @@ const AboutSection = () => {
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight">
                 Jaipur's Trusted Multispeciality <br />
-                <span className="text-primary">Hospital Since 2004</span>
+                <span className="text-primary">Hospital Since 1998</span>
               </h2>
             </div>
 
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-              Jaipur Hospital is one of the most trusted multispeciality hospitals in Jaipur, founded in 2004 with a single goal: to make world-class healthcare available to every family in Rajasthan.
+              Jaipur Hospital is one of the most trusted multispeciality hospitals in Jaipur, founded in 1998 with a single goal: to make world-class healthcare available to every family in Rajasthan.
             </p>
 
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed">

@@ -22,7 +22,7 @@ const AboutPage = () => {
           <div className="container-width text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">About Jaipur Hospital</h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-              Trusted multispeciality hospital serving the people of Rajasthan with compassion and excellence since 2004.
+              Trusted multispeciality hospital serving the people of Rajasthan with compassion and excellence since 1998.
             </p>
           </div>
         </section>
@@ -36,7 +36,7 @@ const AboutPage = () => {
                 <h2 className="text-3xl font-display font-bold text-foreground mb-6">Two Decades of Healing</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Founded in 2004, Jaipur Hospital began with a vision to provide world-class healthcare accessible to every citizen
+                    Founded in 1998, Jaipur Hospital began with a vision to provide world-class healthcare accessible to every citizen
                     of Rajasthan. What started as a 50-bed facility has now grown into a 150-bed multispeciality hospital equipped
                     with cutting-edge technology and a team of 50+ specialist doctors.
                   </p>

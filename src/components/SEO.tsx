@@ -10,7 +10,7 @@ interface SEOProps {
 
 export const SEO = ({ title, description, canonical, schema, robots }: SEOProps) => {
   const defaultTitle = "Jaipur Hospital | Best Multispeciality Hospital in Jaipur";
-  const defaultDescription = "Jaipur Hospital — best multispeciality hospital in Jaipur since 2004. 50+ specialists, 24/7 emergency, ICU, NICU, cashless treatment under Ayushman Bharat, CGHS and ECHS.";
+  const defaultDescription = "Jaipur Hospital — best multispeciality hospital in Jaipur since 1998. 50+ specialists, 24/7 emergency, ICU, NICU, cashless treatment under Ayushman Bharat, CGHS and ECHS.";
   const baseUrl = "https://jaipurhospital.co.in";
   
   const currentUrl = canonical ? `${baseUrl}${canonical}` : baseUrl;

@@ -30,8 +30,8 @@ const homeSchema = {
       "url": "https://www.jaipurhospital.co.in",
       "logo": "https://www.jaipurhospital.co.in/logo.png",
       "image": "https://www.jaipurhospital.co.in/hospital-image.jpg",
-      "description": "Jaipur Hospital is one of the best multispeciality hospitals in Jaipur, providing expert medical care since 2004. 50+ specialist doctors, 24/7 emergency, ICU, NICU, and cashless treatment under Ayushman Bharat, CGHS, and ECHS.",
-      "foundingDate": "2004",
+      "description": "Jaipur Hospital is one of the best multispeciality hospitals in Jaipur, providing expert medical care since 1998. 50+ specialist doctors, 24/7 emergency, ICU, NICU, and cashless treatment under Ayushman Bharat, CGHS, and ECHS.",
+      "foundingDate": "1998",
       "numberOfBeds": 150,
       "address": {
         "@type": "PostalAddress",
@@ -163,7 +163,7 @@ const Index = () => {
     <div className="min-h-screen bg-background font-sans">
       <SEO
         title="Jaipur Hospital | Best Multispeciality Hospital in Jaipur"
-        description="Jaipur Hospital — best multispeciality hospital in Jaipur since 2004. 50+ specialists, 24/7 emergency, ICU, NICU, cashless treatment under Ayushman Bharat, CGHS and ECHS."
+        description="Jaipur Hospital — best multispeciality hospital in Jaipur since 1998. 50+ specialists, 24/7 emergency, ICU, NICU, cashless treatment under Ayushman Bharat, CGHS and ECHS."
         canonical="/"
         schema={homeSchema as any}
       />

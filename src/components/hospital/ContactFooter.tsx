@@ -43,7 +43,7 @@ const ContactFooter = () => {
             </div>
 
             <h3 className="font-display font-bold text-white text-base md:text-lg mb-3">
-              Jaipur Hospital — Trusted Multispeciality Care in Jaipur Since 2004
+              Jaipur Hospital — Trusted Multispeciality Care in Jaipur Since 1998
             </h3>
             <p className="text-navy-foreground/60 text-sm mb-8 leading-relaxed">
               Jaipur Hospital is one of the best multispeciality hospitals in Jaipur, providing advanced healthcare with compassion, expertise, and cutting-edge technology to the people of Rajasthan. We are committed to making quality care accessible, affordable, and available to everyone who walks through our doors.

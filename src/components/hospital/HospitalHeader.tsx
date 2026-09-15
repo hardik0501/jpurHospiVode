@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Phone, Menu, X, Calendar, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logoJH from "@/assets/logo-jh.png";
+import { SchemesTicker } from "./SchemesTicker";
 
 // Mega menu items from reference list; skip what's already in main nav (About, Services, Doctors, Facilities, Contact)
 const moreMenuItems = [
@@ -71,8 +72,11 @@ const HospitalHeader = () => {
           : "bg-card/95 backdrop-blur-sm"
         }`}
     >
+      {/* Moving Schemes Marquee Ticker Above Header */}
+      <SchemesTicker />
+
       {/* Top bar */}
-      <div className="bg-primary text-primary-foreground py-1.5 px-4 text-sm hidden md:block">
+      <div className="bg-primary text-primary-foreground py-1 px-4 text-xs md:text-sm hidden md:block">
         <div className="container-width flex items-center justify-between">
           <span className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block" />

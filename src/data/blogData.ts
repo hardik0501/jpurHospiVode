@@ -232,7 +232,7 @@ export const blogPosts: BlogPost[] = [
     category: "About Us",
     img: placeholder,
     content: [
-      "Since 2004, Jaipur Hospital has been serving the people of Rajasthan with a focus on quality, accessibility, and compassion. Here’s why families trust us.",
+      "Since 1998, Jaipur Hospital has been serving the people of Rajasthan with a focus on quality, accessibility, and compassion. Here’s why families trust us.",
       "We offer multispeciality care under one roof—cardiology, orthopaedics, gynaecology, paediatrics, general surgery, emergency, ICU, and more. Our team of experienced doctors and support staff work together for your best outcome.",
       "We have modern diagnostics, NABL-accredited lab, and 24/7 emergency and ICU. We are empanelled with CGHS, ECHS, Ayushman Bharat, and insurance for cashless treatment where applicable.",
       "Whether you need a routine check-up, specialist consultation, or emergency care, we are here at Lal Kothi, Near S.M.S. Stadium, Tonk Road, Jaipur. Call us at 0141-2741465 or +91 92570 29901. We care for life.",
