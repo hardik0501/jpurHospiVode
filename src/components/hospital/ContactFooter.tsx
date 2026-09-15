@@ -164,7 +164,16 @@ const ContactFooter = () => {
       <div className="border-t border-navy-foreground/10 py-5">
         <div className="container-width flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-navy-foreground/50">
           <span>© 2026 Jaipur Hospital, Jaipur. All rights reserved.</span>
-          <span>Designed for excellence in healthcare</span>
+          <span>
+            Designed by{" "}
+            <a
+              href="mailto:Hardikgothwal0501@gmail.com"
+              className="text-navy-foreground/80 hover:text-primary-glow font-semibold transition-colors underline decoration-dotted underline-offset-4"
+              title="Mail HG"
+            >
+              HG
+            </a>
+          </span>
         </div>
       </div>
     </footer>
