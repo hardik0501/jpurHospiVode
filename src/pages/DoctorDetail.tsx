@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { Calendar, Clock, Globe, GraduationCap, Award, ArrowLeft, Phone, MessageCircle, Banknote, ShieldAlert, Sparkles } from "lucide-react";
+import { Calendar, Clock, Globe, GraduationCap, Award, ArrowLeft, Phone, MessageCircle, Banknote } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import HospitalHeader from "@/components/hospital/HospitalHeader";
 import ContactFooter from "@/components/hospital/ContactFooter";
@@ -25,9 +25,6 @@ const DoctorDetail = () => {
       </div>
     );
   }
-
-  const phoneNum = doctor.phone || "9257029901";
-  const waNum = doctor.phone ? `91${doctor.phone}` : "919257029901";
 
   return (
     <div className="min-h-screen bg-background font-sans">
@@ -85,16 +82,12 @@ const DoctorDetail = () => {
                           Ext: {doctor.extension}
                         </span>
                       )}
-                      {doctor.codeNumber && (
-                        <span className="inline-block bg-muted text-foreground text-xs font-medium px-2.5 py-1 rounded-full border border-border">
-                          Code: {doctor.codeNumber}
-                        </span>
-                      )}
-                      {doctor.rghsCard && (
-                        <span className="inline-flex items-center gap-1 bg-amber-50 text-amber-700 text-xs font-medium px-2.5 py-1 rounded-full border border-amber-200">
-                          <ShieldAlert size={12} /> {doctor.rghsCard}
-                        </span>
-                      )}
+                      <a
+                        href="tel:+919257029901"
+                        className="inline-flex items-center gap-1 bg-primary-light text-primary text-xs font-semibold px-2.5 py-1 rounded-full border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-colors"
+                      >
+                        <Phone size={12} /> +91 92570 29901
+                      </a>
                     </div>
 
                     <p className="text-muted-foreground text-sm mb-5">{doctor.exp} Experience</p>
@@ -107,13 +100,13 @@ const DoctorDetail = () => {
                         <Calendar size={16} /> Book Appointment
                       </a>
                       <a
-                        href={`tel:+91${phoneNum}`}
+                        href="tel:+919257029901"
                         className="flex items-center justify-center gap-2 border border-primary/30 text-primary font-semibold rounded-xl py-3 hover:bg-primary-light transition-colors"
                       >
-                        <Phone size={16} /> {doctor.phone ? `Call Doctor (${doctor.phone})` : "Call Hospital"}
+                        <Phone size={16} /> Call (+91 92570 29901)
                       </a>
                       <a
-                        href={`https://wa.me/${waNum}?text=Hello! I'd like to book an appointment with ${doctor.name}.`}
+                        href={`https://wa.me/919257029901?text=${encodeURIComponent(`Hello! I would like to book an appointment / consult with ${doctor.name}.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 bg-green-500 text-white font-semibold rounded-xl py-3 hover:bg-green-600 transition-colors"

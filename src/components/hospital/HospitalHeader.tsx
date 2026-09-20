@@ -4,9 +4,20 @@ import { Link, useLocation } from "react-router-dom";
 import logoJH from "@/assets/logo-jh.png";
 import { SchemesTicker } from "./SchemesTicker";
 
-// Mega menu items from reference list; skip what's already in main nav (About, Services, Doctors, Facilities, Contact)
-const moreMenuItems = [
-  { label: "Health Packages", href: "/health-packages", badge: "Offers" },
+interface MenuItem {
+  label: string;
+  href: string;
+  badge?: string;
+}
+
+interface NavLinkItem {
+  label: string;
+  href: string;
+  isHighlighted?: boolean;
+}
+
+// Mega menu items from reference list; skip what's already in main nav (About, Services, Doctors, Facilities, Health Packages, Contact, Blogs)
+const moreMenuItems: MenuItem[] = [
   { label: "Home", href: "/" },
   { label: "Book Appointment", href: "/book-appointment" },
   { label: "Testimonials", href: "/testimonials" },
@@ -56,11 +67,12 @@ const HospitalHeader = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const navLinks = [
+  const navLinks: NavLinkItem[] = [
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Doctors", href: "/doctors" },
     { label: "Facilities", href: "/facilities" },
+    { label: "Health Packages", href: "/health-packages", isHighlighted: true },
     { label: "Contact", href: "/contact" },
     { label: "Blogs", href: "/blogs" },
   ];
@@ -76,8 +88,8 @@ const HospitalHeader = () => {
       <SchemesTicker />
 
       {/* Top bar */}
-      <div className="bg-primary text-primary-foreground py-1 px-4 text-xs md:text-sm hidden md:block">
-        <div className="container-width flex items-center justify-between">
+      <div className="bg-primary text-primary-foreground py-1 px-4 sm:px-6 lg:px-8 text-xs md:text-sm hidden md:block">
+        <div className="w-full flex items-center justify-between">
           <span className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block" />
             24/7 Emergency: <strong>0141-2741465</strong> | <strong>+91 92570 29901</strong>
@@ -87,7 +99,7 @@ const HospitalHeader = () => {
       </div>
 
       {/* Main nav */}
-      <div className="container-width flex items-center justify-between py-2 sm:py-3">
+      <div className="w-full px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2 sm:py-2.5">
         {/* Logo */}
         <Link to="/" className="flex items-center group shrink-0">
           <img
@@ -98,9 +110,23 @@ const HospitalHeader = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6">
-          {navLinks.map((link) =>
-            link.href.startsWith("#") ? (
+        <nav className="hidden lg:flex items-center gap-3.5 xl:gap-5 whitespace-nowrap">
+          {navLinks.map((link) => {
+            if ("isHighlighted" in link && link.isHighlighted) {
+              return (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="text-sm font-semibold text-primary hover:text-primary-dark transition-colors relative flex items-center gap-1.5 pb-0.5 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                >
+                  <span>{link.label}</span>
+                  <span className="text-[10px] font-bold bg-amber-100 text-amber-800 border border-amber-300/80 px-1.5 py-0.5 rounded leading-none">
+                    Offers
+                  </span>
+                </Link>
+              );
+            }
+            return link.href.startsWith("#") ? (
               <a
                 key={link.label}
                 href={link.href}
@@ -116,8 +142,8 @@ const HospitalHeader = () => {
               >
                 {link.label}
               </Link>
-            )
-          )}
+            );
+          })}
           {/* More - Mega Menu */}
           <div className="relative" ref={moreRef}>
             <button
@@ -187,22 +213,51 @@ const HospitalHeader = () => {
             <Calendar size={14} />
             Book Appointment
           </Link>
+          <img
+            src="https://nabh-portal-live.s3.ap-south-1.amazonaws.com/wp-content/uploads/2025/08/28194810/cropped-nabh-logo-1.png"
+            alt="NABH Accredited"
+            className="h-10 md:h-12 w-auto object-contain shrink-0"
+          />
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className="lg:hidden text-foreground"
-          onClick={() => setMobileOpen(!mobileOpen)}
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Header Right */}
+        <div className="flex items-center gap-2.5 lg:hidden">
+          <img
+            src="https://nabh-portal-live.s3.ap-south-1.amazonaws.com/wp-content/uploads/2025/08/28194810/cropped-nabh-logo-1.png"
+            alt="NABH Accredited"
+            className="h-8 w-auto object-contain md:hidden"
+          />
+          {/* Mobile Menu Toggle */}
+          <button
+            className="text-foreground p-1"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle Menu"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden bg-card border-t border-border px-4 py-4 flex flex-col gap-3 shadow-lg">
-          {navLinks.map((link) =>
-            link.href.startsWith("#") ? (
+          {navLinks.map((link) => {
+            if ("isHighlighted" in link && link.isHighlighted) {
+              return (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="text-sm font-semibold text-primary py-2 border-b border-border/50 flex items-center justify-between"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span>{link.label}</span>
+                  <span className="text-[10px] font-bold bg-amber-100 text-amber-800 border border-amber-300/80 px-1.5 py-0.5 rounded leading-none">
+                    Offers
+                  </span>
+                </Link>
+              );
+            }
+            return link.href.startsWith("#") ? (
               <a
                 key={link.label}
                 href={link.href}
@@ -220,8 +275,8 @@ const HospitalHeader = () => {
               >
                 {link.label}
               </Link>
-            )
-          )}
+            );
+          })}
           <div className="border-b border-border/50 pb-2">
             <span className="text-sm font-semibold text-foreground py-2 block">More</span>
             <div className="grid grid-cols-1 gap-0.5 pl-2 mt-1 max-h-64 overflow-y-auto">
@@ -253,13 +308,20 @@ const HospitalHeader = () => {
               )}
             </div>
           </div>
-          <Link
-            to="/book-appointment"
-            className="mt-2 text-center text-sm bg-gradient-primary text-primary-foreground font-semibold rounded-full px-5 py-3"
-            onClick={() => setMobileOpen(false)}
-          >
-            Book Appointment
-          </Link>
+          <div className="mt-2 flex items-center justify-between gap-3">
+            <Link
+              to="/book-appointment"
+              className="flex-1 text-center text-sm bg-gradient-primary text-primary-foreground font-semibold rounded-full px-5 py-3 shadow-md"
+              onClick={() => setMobileOpen(false)}
+            >
+              Book Appointment
+            </Link>
+            <img
+              src="https://nabh-portal-live.s3.ap-south-1.amazonaws.com/wp-content/uploads/2025/08/28194810/cropped-nabh-logo-1.png"
+              alt="NABH Accredited"
+              className="h-10 w-auto object-contain"
+            />
+          </div>
         </div>
       )}
     </header>

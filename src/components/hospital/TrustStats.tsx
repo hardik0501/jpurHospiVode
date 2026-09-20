@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 35, suffix: "+", label: "Years of Excellence", desc: "Serving Jaipur Since 1998" },
-  { value: 150, suffix: "", label: "Hospital Beds", desc: "General, ICU, CCU and NICU" },
+  { value: 28, suffix: "+", label: "Years of Experience", desc: "Serving Jaipur Since 1998" },
+  { value: 100, suffix: "+", label: "Hospital Beds", desc: "General, ICU, CCU and NICU" },
   { value: 50, suffix: "+", label: "Specialist Doctors", desc: "Across 10+ Departments" },
-  { value: 10000, suffix: "+", label: "Patients Treated", desc: "Happy and Recovered" },
+  { value: 1000000, suffix: "+", label: "Happy Patients", desc: "Treated with Compassion" },
 ];
 
 const CountUp = ({ target, suffix }: { target: number; suffix: string }) => {

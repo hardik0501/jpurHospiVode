@@ -32,7 +32,7 @@ const homeSchema = {
       "image": "https://www.jaipurhospital.co.in/hospital-image.jpg",
       "description": "Jaipur Hospital is one of the best multispeciality hospitals in Jaipur, providing expert medical care since 1998. 50+ specialist doctors, 24/7 emergency, ICU, NICU, and cashless treatment under Ayushman Bharat, CGHS, and ECHS.",
       "foundingDate": "1998",
-      "numberOfBeds": 150,
+      "numberOfBeds": 100,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Lal Kothi, Near S.M.S. Stadium, Tonk Road",
@@ -118,7 +118,7 @@ const homeSchema = {
           "name": "What are the OPD timings at Jaipur Hospital?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our OPD runs from 9:00 AM to 8:00 PM, Monday to Saturday. Emergency services are available 24 hours a day, 7 days a week, including all public holidays."
+            "text": "Our OPD runs from 10:00 AM to 5:00 PM, Monday to Saturday. Emergency services are available 24 hours a day, 7 days a week, including all public holidays."
           }
         },
         {

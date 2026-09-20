@@ -13,7 +13,7 @@ const actions = [
   {
     icon: Clock,
     label: "OPD Timings",
-    value: "9:00 AM – 8:00 PM",
+    value: "10:00 AM – 5:00 PM",
     href: "#",
     bg: "bg-primary-light",
     iconBg: "bg-primary",

@@ -123,7 +123,7 @@ const categories = [
 ];
 
 const highlights = [
-  { icon: Bed, label: "150+ Beds", desc: "Multi-speciality capacity" },
+  { icon: Bed, label: "100+ Beds", desc: "Multi-speciality capacity" },
   { icon: Shield, label: "NABH Standards", desc: "Quality accredited care" },
   { icon: Clock, label: "24/7 Emergency", desc: "Round the clock services" },
   { icon: Wifi, label: "Digital Records", desc: "EMR & paperless workflow" },

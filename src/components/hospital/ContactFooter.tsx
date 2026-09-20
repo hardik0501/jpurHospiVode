@@ -75,7 +75,7 @@ const ContactFooter = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock size={18} className="text-primary-glow flex-shrink-0" />
-                <span className="text-navy-foreground/80 text-sm">OPD: 9:00 AM to 8:00 PM | Emergency: 24/7</span>
+                <span className="text-navy-foreground/80 text-sm">OPD: 10:00 AM to 5:00 PM | Emergency: 24/7</span>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ const ContactFooter = () => {
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-navy-foreground/50">OPD Timings:</span>
-                  <span className="text-navy-foreground/80 font-medium">9:00 AM – 8:00 PM</span>
+                  <span className="text-navy-foreground/80 font-medium">10:00 AM – 5:00 PM</span>
                 </div>
               </div>
             </div>

@@ -59,7 +59,7 @@ const LocationSection = () => {
                 <div className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Clock size={16} className="text-primary flex-shrink-0" />
                   <span>
-                    <strong>OPD Hours:</strong> 9:00 AM to 8:00 PM | <strong>Emergency:</strong> 24/7
+                    <strong>OPD Hours:</strong> 10:00 AM to 5:00 PM | <strong>Emergency:</strong> 24/7
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-muted-foreground">

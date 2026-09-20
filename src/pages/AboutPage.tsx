@@ -36,12 +36,12 @@ const AboutPage = () => {
                 <h2 className="text-3xl font-display font-bold text-foreground mb-6">Two Decades of Healing</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Founded in 1998, Jaipur Hospital began with a vision to provide world-class healthcare accessible to every citizen
-                    of Rajasthan. What started as a 50-bed facility has now grown into a 150-bed multispeciality hospital equipped
+                    Founded in 1998 with over 28 years of healing experience, Jaipur Hospital began with a vision to provide world-class healthcare accessible to every citizen
+                    of Rajasthan. What started as a 50-bed facility has now grown into a 100-bed multispeciality hospital equipped
                     with cutting-edge technology and a team of 50+ specialist doctors.
                   </p>
                   <p>
-                    Located at the heart of Jaipur — Lal Kothi, Near S.M.S. Stadium, Tonk Road — we have treated over 10,000 patients across
+                    Located at the heart of Jaipur — Lal Kothi, Near S.M.S. Stadium, Tonk Road — we have treated over 1,000,000+ happy patients across
                     Cardiology, Orthopaedics, Neurology, General Surgery, Gynaecology, Pediatrics, and more. Our commitment to
                     patient-first care, advanced diagnostics, and affordable pricing has made us one of the most trusted hospitals in Rajasthan.
                   </p>

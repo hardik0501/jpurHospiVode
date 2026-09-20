@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
             What Patients Say About the Best Hospital in Jaipur
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-6">
-            Over 10,000 patients have trusted us with their health and their families' well-being. Their recoveries are our greatest achievement.
+            Over 1,000,000+ happy patients have trusted us with their health and their families' well-being. Their recoveries are our greatest achievement.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Calendar, ChevronDown, ArrowRight, Clock, Banknote } from "lucide-react";
+import { Calendar, ChevronDown, ArrowRight, Clock, Banknote, Phone } from "lucide-react";
 import HospitalHeader from "@/components/hospital/HospitalHeader";
 import ContactFooter from "@/components/hospital/ContactFooter";
 import FloatingButtons from "@/components/hospital/FloatingButtons";
@@ -101,6 +101,17 @@ const DoctorsPage = () => {
                         {doc.extension && (
                           <div className="text-muted-foreground text-[11px]">Room / Ext: <span className="font-medium text-foreground">{doc.extension}</span></div>
                         )}
+                        <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground mt-1">
+                          <Phone size={11} className="text-primary flex-shrink-0" />
+                          <span>Contact:</span>
+                          <a
+                            href="tel:+919257029901"
+                            onClick={(e) => e.stopPropagation()}
+                            className="font-semibold text-primary hover:underline"
+                          >
+                            +91 92570 29901
+                          </a>
+                        </div>
                       </div>
                     </div>
 

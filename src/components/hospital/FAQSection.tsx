@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "What are the OPD timings at Jaipur Hospital?",
-    a: "Our OPD runs from 9:00 AM to 8:00 PM, Monday to Saturday. Emergency services are available 24 hours a day, 7 days a week, including all public holidays.",
+    a: "Our OPD runs from 10:00 AM to 5:00 PM, Monday to Saturday. Emergency services are available 24 hours a day, 7 days a week, including all public holidays.",
   },
   {
     q: "Does Jaipur Hospital have a 24/7 ambulance service?",

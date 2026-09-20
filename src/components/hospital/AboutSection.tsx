@@ -23,7 +23,7 @@ const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-              Over two decades, we have grown from a 50-bed facility into a 150-bed affordable hospital in Jaipur with 50+ specialist doctors across Cardiology, Orthopaedics, Neurology, Gynaecology, Paediatrics, General Medicine, General Surgery, and more. We have treated over 10,000 patients, and every one of them has experienced the same commitment to quality, honesty, and compassionate care.
+              With over 28 years of experience, we have grown from a 50-bed facility into a 100-bed multispeciality hospital in Jaipur with 50+ specialist doctors across Cardiology, Orthopaedics, Neurology, Gynaecology, Paediatrics, General Medicine, General Surgery, and more. We have treated over 1,000,000+ happy patients, with each receiving our steadfast commitment to quality, honesty, and compassionate care.
             </p>
 
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
@@ -68,7 +68,7 @@ const AboutSection = () => {
 
             {/* Micro Highlights Pill */}
             <div className="absolute -top-4 -right-4 bg-yellow-300 text-yellow-950 text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-xl shadow-lg border border-yellow-400 hidden sm:block animate-pulse">
-              20+ Years Legacy
+              28+ Years Legacy
             </div>
           </div>
         </div>

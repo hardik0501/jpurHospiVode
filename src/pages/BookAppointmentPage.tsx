@@ -68,7 +68,7 @@ const BookAppointmentPage = () => {
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li className="flex gap-2.5">
                       <Clock size={16} className="text-primary flex-shrink-0 mt-0.5" />
-                      <span>Appointments are confirmed within 30 minutes during OPD hours (9 AM - 8 PM).</span>
+                      <span>Appointments are confirmed within 30 minutes during OPD hours (10 AM - 5 PM).</span>
                     </li>
                     <li className="flex gap-2.5">
                       <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
