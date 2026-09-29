@@ -19,6 +19,7 @@ interface NavLinkItem {
 // Mega menu items from reference list; skip what's already in main nav (About, Services, Doctors, Facilities, Health Packages, Contact, Blogs)
 const moreMenuItems: MenuItem[] = [
   { label: "Home", href: "/" },
+  { label: "Dental & Cosmetology", href: "/dental" },
   { label: "Book Appointment", href: "/book-appointment" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Our Schemes", href: "/our-schemes" },

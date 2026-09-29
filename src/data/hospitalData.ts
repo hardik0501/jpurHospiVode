@@ -383,18 +383,33 @@ export const doctors: Doctor[] = [
   },
   {
     id: "dr-jahanvi-tyagi",
-    img: getDoctorImg("No Image"),
+    img: "https://doctoronboarding.eka.care/cl2rhhut3000l0sg1fkcghr9j.png",
     name: "Dr. Jahanvi Tyagi",
-    qual: "BDS, MDS (Dentistry)",
+    qual: "BDS, FFAC (Dental Surgeon & Clinical Cosmetologist)",
     dept: "Dentistry",
-    exp: "Experienced",
-    schedule: [{ day: "Mon – Sat", time: "10:00 AM – 03:00 PM" }],
+    designation: "Dental Surgeon & Clinical Cosmetologist (Dr. Jahanvi's Dermadent)",
+    exp: "15+ Years",
+    schedule: [{ day: "Mon – Sun", time: "10:30 AM – 08:00 PM" }],
     fees: "₹300",
     phone: "8209011472",
-    bio: "Dr. Jahanvi Tyagi is a dental surgeon at Jaipur Hospital providing advanced dental treatments, oral healthcare, and restorative procedures.",
-    education: educationFromQual("BDS, MDS (Dentistry)"),
-    specializations: ["Dental Surgery", "Root Canal Treatment", "Cosmetic Dentistry", "Oral Care"],
-    languages: ["Hindi", "English"],
+    bio: "Dr. Jahanvi Tyagi is an experienced dental surgeon and clinical cosmetologist with 15+ years in the field. Degree from Govt Dental College Nagpur (MUHS Nashik) and Fellowship in Facial Aesthetic Medicine (FFAC) from Mumbai. Registered with Rajasthan Dental Council (A4243). She heads the Dental & Cosmetic wing at Dr. Jahanvi's Dermadent / Devkripa Health Care Centre, specializing in smile correction, root canals, tooth capping, malocclusion, implants, and advanced clinical cosmetology.",
+    education: [
+      "BDS – Govt Dental College Nagpur, MUHS Nashik (2008)",
+      "FFAC – Fellowship in Facial Aesthetic Medicine, Mumbai (2018)",
+      "Reg No: A4243 – Rajasthan Dental Council (2008)"
+    ],
+    specializations: [
+      "Dental Surgery",
+      "Root Canal Treatment (RCT)",
+      "Smile Correction & Design",
+      "Dental Implants & Tooth Surgeries",
+      "Orthodontics (Braces & Aligners)",
+      "Hydrafacial & Medi Facials",
+      "Hair PRP & Hair Restoration",
+      "Acne & Melasma Treatment",
+      "Permanent Laser Hair Removal"
+    ],
+    languages: ["English", "Hindi"],
   },
   {
     id: "dr-rachna-meena",
@@ -1703,6 +1718,48 @@ export const specialities: Speciality[] = [
 <p><strong>Call:</strong> 0141-2741465 | +91 92570 29901</p>
 
 <p>Do not settle for pain or limited movement as a permanent state. Book a session with our physiotherapist in Jaipur today and start moving toward a better, more active life.</p>`,
+  },
+  {
+    id: "dentistry",
+    name: "Dental Surgery & Clinical Cosmetology",
+    shortDesc: "Comprehensive dental care, smile design & clinical cosmetology",
+    fullDesc: "Expert dental treatments including painless root canals, implants, smile correction, orthodontics, plus advanced cosmetology facials and hair restoration by Dr. Jahanvi Tyagi (BDS, FFAC).",
+    icon: "Sparkles",
+    color: "text-cyan-500",
+    bg: "bg-cyan-50",
+    treatments: [
+      "Root Canal Treatment (RCT)",
+      "Dental Implants",
+      "Smile Correction & Design",
+      "Orthodontic Treatment (Braces & Aligners)",
+      "Veneers and Bridges",
+      "Gentle Tooth Extraction",
+      "Scaling and Polishing",
+      "Tooth Surgeries",
+      "Hydrafacial & Medi Facials",
+      "Chemical Peels",
+      "Microneedling",
+      "Permanent Laser Hair Removal",
+      "Hair PRP & Hair Restoration",
+      "Acne & Melasma Treatment"
+    ],
+    doctorIds: ["dr-jahanvi-tyagi"],
+    img: icuImg,
+    metaTitle: "Dental Surgery & Clinical Cosmetology in Jaipur | Dr. Jahanvi's Dermadent",
+    metaDescription: "Painless root canal treatment, dental implants, teeth alignment, hydrafacial and clinical cosmetology in Jaipur by Dr. Jahanvi Tyagi. Book appointment now!",
+    htmlContent: `<h1>Dental Surgery & Clinical Cosmetology in Jaipur</h1>
+<p>Headed by <strong>Dr. Jahanvi Tyagi</strong> (Dental Surgeon & Clinical Cosmetologist, 15+ years experience, BDS MUHS Nashik, FFAC Mumbai), our multispeciality dental and cosmetic wing at Dr. Jahanvi's Dermadent / Devkripa Health Care Centre delivers world-class oral care and facial aesthetic transformations.</p>
+<h2>Comprehensive Treatments</h2>
+<ul>
+  <li><strong>Painless Root Canal (RCT):</strong> Save damaged teeth with modern rotary endodontics.</li>
+  <li><strong>Dental Implants & Bridges:</strong> Permanent lifelike tooth replacement.</li>
+  <li><strong>Smile Designing & Veneers:</strong> Hollywood smile makeovers tailored to your facial proportions.</li>
+  <li><strong>Orthodontics & Clear Aligners:</strong> Straighten crooked teeth invisibly.</li>
+  <li><strong>Clinical Cosmetology:</strong> Hydrafacial, Chemical Peels, Acne Scars & Melasma management.</li>
+  <li><strong>Hair PRP & Laser Care:</strong> Permanent laser hair reduction and scalp hair rejuvenation.</li>
+</ul>
+<p><strong>Clinic:</strong> H.no. 175 Ashok Vihar Vistar, Khirni Phatak Road, Gokulpura, Jhotwara, Jaipur</p>
+<p><strong>Timings:</strong> Mon – Sun: 10:30 AM – 08:00 PM | <strong>Phone:</strong> 8209011472, +91 92570 29901</p>`,
   },
 ];
 

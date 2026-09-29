@@ -42,6 +42,7 @@ const TermsOfUsePage = lazy(() => import("./pages/TermsOfUsePage"));
 const BookAppointmentPage = lazy(() => import("./pages/BookAppointmentPage"));
 const HealthPackagesPage = lazy(() => import("./pages/HealthPackagesPage"));
 const TestimonialsPage = lazy(() => import("./pages/TestimonialsPage"));
+const DentalPage = lazy(() => import("./pages/DentalPage"));
 
 import { HelmetProvider } from 'react-helmet-async';
 import ScrollToTop from "./components/ScrollToTop";
@@ -113,6 +114,11 @@ const App = () => (
               <Route path="/terms-of-use" element={wrapWithSEO(<TermsOfUsePage />, { title: "Terms of Use", description: "Read the website and service terms of use for Jaipur Hospital.", canonical: "/terms-of-use" })} />
               <Route path="/book-appointment" element={wrapWithSEO(<BookAppointmentPage />, { title: "Book Appointment | Jaipur Hospital", description: "Book an appointment online or contact our patient coordinator desk directly.", canonical: "/book-appointment" })} />
               <Route path="/health-packages" element={wrapWithSEO(<HealthPackagesPage />, { title: "Health Checkup Packages | Jaipur Hospital", description: "Select from our range of affordable preventive checkup packages in Jaipur.", canonical: "/health-packages" })} />
+              <Route path="/dental" element={<DentalPage />} />
+              <Route path="/dental-care" element={<DentalPage />} />
+              <Route path="/dentistry" element={<DentalPage />} />
+              <Route path="/dermadent" element={<DentalPage />} />
+              <Route path="/treatments" element={<DentalPage />} />
               <Route path="/testimonials" element={wrapWithSEO(<TestimonialsPage />, { title: "Patient Testimonials | Jaipur Hospital", description: "Explore reviews and stories of recovery shared by our patients.", canonical: "/testimonials" })} />
               <Route path="*" element={<NotFound />} />
             </Routes>
