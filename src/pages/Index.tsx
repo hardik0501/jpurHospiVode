@@ -67,7 +67,7 @@ const homeSchema = {
       "sameAs": [
         "https://www.facebook.com/share/1PtNFgMpZw/",
         "https://www.instagram.com/jaipur_hospital_lalkothi",
-        "https://youtube.com/@jaipurhospitallalkothi1992?si=vA1EbYOY7jrGt835"
+        "https://www.youtube.com/@jaipurhospitallalkothi1992"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

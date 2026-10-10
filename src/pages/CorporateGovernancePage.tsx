@@ -227,6 +227,10 @@ const VOTING_RESULTS = [
   {
     "title": "Results of 36th AGM with Scrutinizer’s Report",
     "pdf": "Voting Results with Scrutinizers Report.pdf"
+  },
+  {
+    "title": "Results of 37th AGM with Scrutinizers Report",
+    "pdf": "Results of 37th AGM with Scrutinizers Report.pdf"
   }
 ];
 

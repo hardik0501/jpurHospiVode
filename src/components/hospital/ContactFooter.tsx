@@ -84,7 +84,7 @@ const ContactFooter = () => {
               {[
                 { Icon: Facebook, href: "https://www.facebook.com/share/1PtNFgMpZw/", label: "Facebook" },
                 { Icon: Instagram, href: "https://www.instagram.com/jaipur_hospital_lalkothi", label: "Instagram" },
-                { Icon: Youtube, href: "https://youtube.com/@jaipurhospitallalkothi1992?si=vA1EbYOY7jrGt835", label: "YouTube" },
+                { Icon: Youtube, href: "https://www.youtube.com/@jaipurhospitallalkothi1992", label: "YouTube" },
               ].map(({ Icon, href, label }, idx) => (
                 <a
                   key={idx}
