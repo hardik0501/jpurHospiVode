@@ -158,6 +158,16 @@
   .container-width {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Internal page hero section padding to clear fixed header */
+  .internal-hero-pt {
+    @apply pt-44 sm:pt-48 md:pt-52 lg:pt-56;
+  }
+
+  /* Internal page breadcrumb/top section padding to clear fixed header */
+  .internal-breadcrumb-pt {
+    @apply pt-36 sm:pt-40 md:pt-48 lg:pt-52;
+  }
 }
 
 @keyframes fadeUp {

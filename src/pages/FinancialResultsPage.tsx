@@ -63,7 +63,7 @@ const FinancialResultsPage = () => {
       
       <main className="flex-1">
         {/* Page Header / Hero Area */}
-        <section className="pt-32 pb-16 bg-gradient-primary">
+        <section className="internal-hero-pt pb-16 bg-gradient-primary">
           <div className="container-width text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">
               Financial Results

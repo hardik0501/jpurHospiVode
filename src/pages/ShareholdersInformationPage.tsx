@@ -73,9 +73,9 @@ const ShareholdersInformationPage = () => {
   return (
     <div className="min-h-screen bg-background font-sans">
       <HospitalHeader />
-      <main className="pt-24">
+      <main>
         {/* Page Hero */}
-        <section className="pt-16 pb-12 bg-gradient-primary">
+        <section className="internal-hero-pt pb-12 bg-gradient-primary">
           <div className="container-width">
             <div className="flex flex-col items-center text-center">
               <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">

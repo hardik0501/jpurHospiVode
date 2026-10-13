@@ -345,7 +345,7 @@ const DentalPage: React.FC = () => {
 
       <HospitalHeader />
 
-      <main className="pt-28 sm:pt-36 lg:pt-40 bg-slate-950 text-white">
+      <main className="pt-36 sm:pt-40 md:pt-48 lg:pt-52 bg-slate-950 text-white">
         {/* TOP CLINIC STATUS & ANNOUNCEMENT BAR */}
         <div className="bg-gradient-to-r from-cyan-950 via-slate-900 to-teal-950 border-b border-cyan-500/20 py-2.5 px-4 text-xs sm:text-sm">
           <div className="container-width flex flex-wrap items-center justify-between gap-3">

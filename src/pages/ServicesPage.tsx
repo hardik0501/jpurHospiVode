@@ -21,7 +21,7 @@ const ServicesPage = () => {
       <HospitalHeader />
       <main>
         {/* Page Hero */}
-        <section className="pt-24 md:pt-32 pb-10 md:pb-14 bg-gradient-primary">
+        <section className="internal-hero-pt pb-10 md:pb-14 bg-gradient-primary">
           <div className="container-width text-center">
             <span className="inline-block text-primary-foreground/80 font-semibold text-xs md:text-sm uppercase tracking-widest mb-2 md:mb-3">
               Our Services

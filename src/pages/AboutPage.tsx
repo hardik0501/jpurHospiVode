@@ -18,7 +18,7 @@ const AboutPage = () => {
       <HospitalHeader />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-12 bg-gradient-primary">
+        <section className="internal-hero-pt pb-12 sm:pb-16 bg-gradient-primary">
           <div className="container-width text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">About Jaipur Hospital</h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">

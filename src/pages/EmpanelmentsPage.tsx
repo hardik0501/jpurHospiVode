@@ -493,9 +493,9 @@ const EmpanelmentsPage = () => {
     <div className="min-h-screen bg-slate-50 font-sans text-foreground">
       <HospitalHeader />
 
-      <main className="pt-24 pb-20">
+      <main className="pb-20">
         {/* Hero Section */}
-        <section className="pt-12 pb-14 bg-gradient-primary text-primary-foreground relative overflow-hidden">
+        <section className="internal-hero-pt pb-14 bg-gradient-primary text-primary-foreground relative overflow-hidden">
           <div className="container-width relative z-10 text-center">
             <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold tracking-wide mb-4">
               <ShieldCheck size={16} /> 100% Cashless Healthcare Empanelments

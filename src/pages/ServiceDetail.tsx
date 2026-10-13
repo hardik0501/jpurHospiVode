@@ -54,7 +54,7 @@ const ServiceDetail = () => {
     return (
       <div className="min-h-screen bg-background font-sans">
         <HospitalHeader />
-        <main className="pt-32 pb-20">
+        <main className="internal-hero-pt pb-20">
           <div className="container-width text-center">
             <h1 className="text-3xl font-display font-bold text-foreground mb-4">Service Not Found</h1>
             <Link to="/services" className="text-primary font-semibold hover:underline">← Back to Services</Link>
@@ -94,7 +94,7 @@ const ServiceDetail = () => {
       <HospitalHeader />
       <main>
         {/* Breadcrumb */}
-        <section className="pt-24 md:pt-28 pb-3 md:pb-4 bg-surface border-b border-border">
+        <section className="internal-breadcrumb-pt pb-3 md:pb-4 bg-surface border-b border-border">
           <div className="container-width flex flex-wrap items-center gap-2 text-xs md:text-sm text-muted-foreground">
             <Link to="/" className="hover:text-primary transition-colors flex-shrink-0">Home</Link>
             <span className="flex-shrink-0">/</span>

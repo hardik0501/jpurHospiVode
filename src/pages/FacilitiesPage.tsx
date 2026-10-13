@@ -146,7 +146,7 @@ const FacilitiesPage = () => {
       <HospitalHeader />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-14 bg-gradient-primary">
+        <section className="internal-hero-pt pb-14 sm:pb-16 bg-gradient-primary">
           <div className="container-width text-center">
             <span className="inline-block text-primary-foreground/80 font-semibold text-sm uppercase tracking-widest mb-3">
               Hospital Infrastructure

@@ -123,7 +123,7 @@ const BoardOfDirectorsPage = () => {
     <div className="min-h-screen bg-background font-sans">
       <HospitalHeader />
       <main>
-        <section className="pt-32 pb-12 bg-gradient-primary">
+        <section className="internal-hero-pt pb-12 bg-gradient-primary">
           <div className="container-width text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-4">
               Board of Directors – Jaipur Hospital

@@ -20,7 +20,7 @@ const NotFound = () => {
       
       <HospitalHeader />
       
-      <main className="flex-1 flex flex-col items-center justify-center bg-surface pt-32 pb-20">
+      <main className="flex-1 flex flex-col items-center justify-center bg-surface internal-hero-pt pb-20">
         <div className="text-center px-4">
           <h1 className="mb-4 text-7xl font-display font-bold text-primary">404</h1>
           <h2 className="mb-4 text-2xl font-bold text-foreground">Oops! Page not found</h2>

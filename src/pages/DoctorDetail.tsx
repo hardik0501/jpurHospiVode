@@ -34,7 +34,7 @@ const DoctorDetail = () => {
           robots="noindex, nofollow"
         />
         <HospitalHeader />
-        <main className="pt-32 pb-20">
+        <main className="internal-hero-pt pb-20">
           <div className="container-width text-center">
             <h1 className="text-3xl font-display font-bold text-foreground mb-4">Doctor Not Found</h1>
             <Link to="/doctors" className="text-primary font-semibold hover:underline">
@@ -92,7 +92,7 @@ const DoctorDetail = () => {
       <HospitalHeader />
       <main>
         {/* Breadcrumb Navigation */}
-        <section className="pt-28 pb-4 bg-surface border-b border-border">
+        <section className="internal-breadcrumb-pt pb-4 bg-surface border-b border-border">
           <div className="container-width flex flex-wrap items-center justify-between gap-3 text-sm">
             <div className="flex items-center gap-2 text-muted-foreground flex-wrap">
               <Link to="/" className="hover:text-primary transition-colors">

@@ -16,7 +16,7 @@ const BlogDetailPage = () => {
       <div className="min-h-screen bg-background font-sans">
         <SEO title="Blog Not Found | Jaipur Hospital" description="The requested blog could not be found. Return to the Jaipur Hospital blog listing." canonical="/blogs" robots="noindex, nofollow" />
         <HospitalHeader />
-        <main className="pt-32 pb-20">
+        <main className="internal-hero-pt pb-20">
           <div className="container-width text-center">
             <h1 className="text-3xl font-display font-bold text-foreground mb-4">Blog Not Found</h1>
             <Link to="/blogs" className="text-primary font-semibold hover:underline">← Back to Blogs</Link>
@@ -36,7 +36,7 @@ const BlogDetailPage = () => {
       />
       <HospitalHeader />
       <main>
-        <section className="pt-28 pb-4 bg-surface border-b border-border">
+        <section className="internal-breadcrumb-pt pb-4 bg-surface border-b border-border">
           <div className="container-width flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>

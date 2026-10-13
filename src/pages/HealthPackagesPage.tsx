@@ -156,9 +156,9 @@ const HealthPackagesPage = () => {
 
       <HospitalHeader />
 
-      <main className="pt-24">
+      <main>
         {/* ================= HERO SECTION ================= */}
-        <section className="relative pt-16 pb-20 bg-gradient-to-br from-primary/95 via-primary to-slate-900 text-primary-foreground overflow-hidden">
+        <section className="relative internal-hero-pt pb-20 bg-gradient-to-br from-primary/95 via-primary to-slate-900 text-primary-foreground overflow-hidden">
           {/* Subtle background decoration */}
           <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
           <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/30 blur-3xl pointer-events-none" />
