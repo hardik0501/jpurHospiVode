@@ -45,6 +45,13 @@ const teamMembers = [
     department: "Obstetrics & Gynaecology",
     qualifications: "MBBS, DGO, MD (Obs & Gynae)",
     image: "/OurTeam/s-600x700.jpg"
+  },
+  {
+    id: 7,
+    name: "DR. ANKIT JAIPAL",
+    department: "Orthopaedic (Consultant Surgeon)",
+    qualifications: "MBBS, MS (Orthopaedics)",
+    image: "/OurTeam/dr-ankit-jaipal.png"
   }
 ];
 
